@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Band Delivery</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<section class="add-section">
+
+    <div class="form-area">
+        <form method="post" action="" enctype="text/plain" id="add_ship" class="js-add-ship-form">
+            <label for="add_ship" class="form-title">
+                Ships/Argosy:
+            </label>
+            <br>
+            <label for="ship-model" class="input-title">
+                <code>Model:</code>
+            </label>
+            <input required type="text" placeholder="Model" name="model" id="ship-model" class="input-area">
+            <br>
+            <label for="number/name" class="input-title">
+                <code>Serial number/Name:</code>
+            </label>
+            <input required type="text" name="name" placeholder="Serial number/Name" id="number/name" class="input-area">
+            <br>
+            <label for="produced-year-ship" class="input-title">
+                <code>Produced year:</code>
+            </label>
+            <input required type="number" placeholder="Produced year" name="producedYear" id="produced-year-ship" class="input-area">
+            <br>
+            <label for="ship-capacity" class="input-title">
+                <code>Capacity (in kg):</code>
+            </label>
+            <input required type="number" placeholder="Capacity (in kg)" name="capacity" id="ship-capacity" class="input-area">
+            <br>
+            <label for="ship-average-speed" class="input-title">
+                <code>Average speed (in nm):</code>
+            </label>
+            <input required type="number" placeholder="Average speed (in nm)" name="averageSpeed" id="ship-average-speed" class="input-area">
+            <br>
+            <label for="team" class="input-title">
+                <code>Count of team:</code>
+            </label>
+            <input required type="number" placeholder="Count of team" name="countOfTeam" id="team" class="input-area">
+            <br>
+            <div class="button-area">
+                <button class="js-clear-ship-form" type="button"><code>Clear</code></button>
+                <button type="submit"><code>Add</code></button>
+            </div>
+        </form>
+
+        <div class="js-ship-list">
+
+        </div>
+
+    </div>
+
+    <div class="form-area">
+        <form method="post" action="" enctype="text/plain" id="add_truck" class="js-add-truck-form">
+            <label for="add_ship" class="form-title">
+                Trucks:
+            </label>
+            <br>
+            <label for="truck-model" class="input-title">
+                <code>Model:</code>
+            </label>
+            <input required type="text" placeholder="Model" name="model" id="truck-model" class="input-area">
+            <br>
+            <label for="license" class="input-title">
+                <code>License plate:</code>
+            </label>
+            <input required type="text" placeholder="License plate" name="licensePlate" id="license" class="input-area">
+            <br>
+            <label for="produced-year-truck" class="input-title">
+                <code>Produced year:</code>
+            </label>
+            <input required type="number" placeholder="Produced year" name="producedYear" id="produced-year-truck" class="input-area">
+            <br>
+            <label for="truck-capacity" class="input-title">
+                <code>Capacity (in kg):</code>
+            </label>
+            <input required type="number" placeholder="Capacity (in kg)" name="capacity" id="truck-capacity" class="input-area">
+            <br>
+            <label for="truck-average-speed" class="input-title">
+                <code>Average speed (in km):</code>
+            </label>
+            <input required type="number" placeholder="Average speed (in km)" name="averageSpeed" id="truck-average-speed" class="input-area">
+            <br>
+            <label for="gas" class="input-title">
+                <code>Type of gas:</code>
+            </label>
+            <input required type="text" placeholder="Type of gas" name="typeOfGas" id="gas" class="input-area">
+            <br>
+            <div class="button-area">
+                <button type="reset" class="js-clear-truck-form"><code>Clear</code></button>
+                <button type="submit"><code>Add</code></button>
+            </div>
+        </form>
+
+        <div class="js-ship-list">
+
+        </div>
+
+    </div>
+
+    <div class="form-area">
+        <form method="post" action="" enctype="text/plain" id="add_cost" class="js-add-cost-form">
+            <label for="add_cost" class="form-title">
+                Cost of delivery:
+            </label>
+            <br>
+            <label for="cost-model" class="input-title">
+                <code>Transport Model:</code>
+            </label>
+            <input required type="text" placeholder="Transport Model" name="model" id="cost-model" class="input-area">
+            <br>
+            <label for="cargo-cost" class="input-title">
+                <code>Cost (cargo):</code>
+            </label>
+            <input required type="number" placeholder="Cost (by 1 kg of cargo)" name="cargoCost" id="cargo-cost" class="input-area">
+            <br>
+            <label for="distance-cost" class="input-title">
+                <code>Cost (distance):</code>
+            </label>
+            <input required type="number" placeholder="Cost (by 1 km of distance)" name="distanceCost" id="distance-cost" class="input-area">
+            <div class="button-area cost-button-area">
+                <button type="reset" class="js-clear-cost-form"><code>Clear</code></button>
+                <button type="submit"><code>Add</code></button>
+            </div>
+        </form>
+
+        <div class="js-ship-list">
+
+        </div>
+
+    </div>
+
+</section>
+
+<script type="module" src="scripts/script.js"></script>
+
+</body>
+</html>
